@@ -1,0 +1,115 @@
+html, body{
+  height:100%;
+  margin:0;
+}
+h1,h2,h3,h4,h5,h6,p,ul,dl{
+  margin:0;
+  padding:0;
+  font-weight:300;
+}
+.app-page{
+  height:100%;
+  display:flex;
+  flex-direction:column;
+  background:url(../img/bg.jpg) no-repeat center center;
+  background-size:100% 100%;
+  &.light{
+    .app-header{
+      background:#fff;
+      .app-back{
+        background:url(../img/back1.png) no-repeat center center;
+        background-size:1.2rem;
+      }
+      .app-title{
+        color:#333;
+      }
+    }
+  }
+  .app-tips{
+    font-size:0.85rem;
+    color:#fff;
+    text-align:center;
+    margin-bottom:1rem;
+    &.warning{
+      color:#ffd200;
+      font-size:0.7rem;
+    }
+  }
+  .app-header{
+    height:3.2rem;
+    .app-back{
+      background:url(../img/back.png) no-repeat center center;
+      display:inline-block;
+      width:3.2rem;
+      height:3.2rem;
+      background-size:1.2rem;
+    }
+    .app-title{
+      flex:1;
+      font-size:0.95rem;
+      color:#fff;
+      display:flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+    }
+    .app-menu{
+      display:flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      width:3.2rem;
+      height:3.2rem;
+      img{
+        width:1.2rem;
+      }
+    }
+  }
+  .app-view{
+    flex:1;
+    overflow:hidden;
+    background:linear-gradient(bottom, #dfe3ed,#f0f4fb);
+  }
+  .app-footer{
+    padding:1rem;
+    background:#dfe3ed;
+  }
+}
+.app-flex{
+  display:flex;
+  &.vertical{
+    flex-direction: column;
+    &.center{
+      align-items: center;
+    }
+    &.middle{
+      justify-content: center;
+    }
+  }
+  &.horizonotal{
+    flex-direction: row;
+    &.center{
+      justify-content: center;
+    }
+    &.middle{
+      align-items: center;
+    }
+  }
+}
+.full{
+  width:100%;
+}
+.t-c{
+  text-align:center;
+}
+.panel{
+  background:rgba(255,255,255,0.6);
+  padding:1rem;
+  box-sizing:border-box;
+  &.conner{
+    border-radius:0.5rem;
+  }
+}
+.c-warning{
+  color:#ffcc00;
+}

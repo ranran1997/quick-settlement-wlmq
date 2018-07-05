@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="scss/index.css">
+</head>
+
+<body>
+  <div class="app-page">
+    <header class="app-header">
+      <div class="app-flex horizontal middle center">
+        <a class="app-back" href="#" onclick="window.history.go(-1)"></a>
+        <h1 class="app-title">安全提示</h1>
+        <a href="" class="app-menu"></a>
+      </div>
+    </header>
+    <section class="app-view" style="background:none;">
+      <div class="app-flex vertical center middle" style="height:100%;padding:0 1rem;">
+        <img class="full" src="img/step3.png" alt="">
+        <p class="tip light" style="margin-top:1rem;">亲，为了您的安全，双跳灯要打开！夜间打开示廓灯和后尾灯更安全，车辆后方放置警示牌很重要哦！</p>
+      </div>
+    </section>
+    <footer class="app-footer" style="background:none;">
+      <a href="选择事故车辆数量.html" class="button primary rounder light">继续</a>
+    </footer>
+  </div>
+  <!-- 弹出框 -->
+  <div class="app-mask" style="display:none;"></div>
+  <div class="app-pop" style="display:none;">
+    <h2 class="app-pop-title">温馨提示</h2>
+    <p>请打开手机GPS定位功能，确保警方定位事故现场。</p>
+    <a href="#" class="button primary light">设置</a>
+  </div>
+</body>
+
+</html>

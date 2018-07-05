@@ -1,0 +1,378 @@
+.app-banner {
+  background: url(../img/banner.png) no-repeat center center;
+  color: #fff;
+  height: 14rem;
+  background-size: 100% 100%;
+  padding: 0.5rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  line-height: 1.8;
+  font-size: 0.85rem;
+  font-weight: 200;
+}
+
+.tip {
+  font-size: 0.85rem;
+  color: #ff4949;
+  text-align: center;
+  line-height: 1.8;
+}
+.tip.light {
+  color: #fff;
+}
+
+.swiper-container {
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  height: 28rem;
+}
+.swiper-container .swiper-slide {
+  padding: 1rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.swiper-container .swiper-slide .card {
+  background: #fff;
+  padding: 1rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-align: center;
+  border-radius: 0.5rem;
+}
+.swiper-container .swiper-slide .card .title {
+  font-size: 1rem;
+  color: #00a7ff;
+  margin-bottom: 1rem;
+}
+.swiper-container .swiper-slide .card img {
+  width: 80%;
+  margin: 1rem 0;
+}
+.swiper-container .swiper-pagination-bullet {
+  background: rgba(255, 255, 255, 0.8);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.swiper-container .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background: white;
+  width: 2rem;
+  border-radius: 0.5rem;
+}
+
+.app-banner-fix {
+  padding: 0 0 1rem 0;
+  text-align: center;
+}
+.app-banner-fix .badge {
+  background: #FF3333;
+  display: inline-block;
+  color: #fff;
+  padding: 2px 0.5rem;
+  border-radius: 1.5rem;
+  font-size: 0.9rem;
+  font-weight: 200;
+  margin-bottom: 0.5rem;
+  position: relative;
+}
+.app-banner-fix .badge img {
+  width: 3.6rem;
+  vertical-align: middle;
+}
+.app-banner-fix .badge span {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.photo-graph {
+  font-size: 0;
+  padding: 0.25rem;
+}
+.photo-graph li {
+  display: inline-block;
+  width: 50%;
+  padding: 0.25rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.photo-graph li .cover {
+  border-bottom: 1px solid #E8E8E8;
+  border-radius: 0.5rem 0.5rem 0 0;
+  position: relative;
+  overflow: hidden;
+}
+.photo-graph li .cover img {
+  width: 100%;
+}
+.photo-graph li .cover .photo {
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  overflow: hidden;
+  background: url(../img/camera.png) no-repeat center center;
+  background-size: 100%;
+}
+.photo-graph li .cover .photo input {
+  opacity: 0;
+}
+.photo-graph li .cover .photo.add {
+  background: url(../img/camera1.png) no-repeat center center;
+  background-size: 100%;
+}
+.photo-graph li p {
+  background: #fff;
+  font-size: 0.75rem;
+  color: #666;
+  text-align: center;
+  padding: 0.2rem;
+  border-radius: 0 0 0.5rem 0.5rem;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6, p, ul, dl {
+  margin: 0;
+  padding: 0;
+  font-weight: 300;
+}
+
+.app-page {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: url(../img/bg.jpg) no-repeat center center;
+  background-size: 100% 100%;
+}
+.app-page.light .app-header {
+  background: #fff;
+}
+.app-page.light .app-header .app-back {
+  background: url(../img/back1.png) no-repeat center center;
+  background-size: 1.2rem;
+}
+.app-page.light .app-header .app-title {
+  color: #333;
+}
+.app-page .app-tips {
+  font-size: 0.85rem;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.app-page .app-tips.warning {
+  color: #ffd200;
+  font-size: 0.7rem;
+}
+.app-page .app-header {
+  height: 3.2rem;
+}
+.app-page .app-header .app-back {
+  background: url(../img/back.png) no-repeat center center;
+  display: inline-block;
+  width: 3.2rem;
+  height: 3.2rem;
+  background-size: 1.2rem;
+}
+.app-page .app-header .app-title {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  font-size: 0.95rem;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.app-page .app-header .app-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 3.2rem;
+  height: 3.2rem;
+}
+.app-page .app-header .app-menu img {
+  width: 1.2rem;
+}
+.app-page .app-view {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  overflow: hidden;
+  background: -webkit-gradient(linear, left bottom, left top, from(#dfe3ed), to(#f0f4fb));
+  background: linear-gradient(bottom, #dfe3ed, #f0f4fb);
+}
+.app-page .app-footer {
+  padding: 1rem;
+  background: #dfe3ed;
+}
+
+.app-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.app-flex.vertical {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.app-flex.vertical.center {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.app-flex.vertical.middle {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.app-flex.horizonotal {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+.app-flex.horizonotal.center {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.app-flex.horizonotal.middle {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.full {
+  width: 100%;
+}
+
+.t-c {
+  text-align: center;
+}
+
+.panel {
+  background: rgba(255, 255, 255, 0.6);
+  padding: 1rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.panel.conner {
+  border-radius: 0.5rem;
+}
+
+.c-warning {
+  color: #ffcc00;
+}
+
+.button {
+  display: inline-block;
+  text-align: center;
+  padding: 0.7rem 2rem;
+  width: 100%;
+  text-align: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-decoration: none;
+  color: #fff;
+  font-size: 0.85rem;
+  font-weight: 200;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.button.rounder {
+  border-radius: 1.5rem;
+}
+.button.primary {
+  background: -webkit-gradient(linear, left top, right top, from(#57c9ff), to(#11adff));
+  background: linear-gradient(left, #57c9ff, #11adff);
+  -webkit-box-shadow: 0 2px 18px rgba(49, 186, 255, 0.3);
+          box-shadow: 0 2px 18px rgba(49, 186, 255, 0.3);
+}
+.button.light {
+  background: #fff;
+  -webkit-box-shadow: 0 0 0 transparent;
+          box-shadow: 0 0 0 transparent;
+}
+.button.light.primary {
+  color: #00a7ff;
+}
+.button:active {
+  opacity: 0.8;
+}
+
+.app-mask {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 10;
+}
+
+.app-pop {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  background: #fff;
+  z-index: 102;
+  min-width: 85%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  border-radius: 0.5rem;
+  overflow: hidden;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: #4a4a4a;
+  font-size: 0.85rem;
+  text-align: center;
+}
+.app-pop .app-pop-title {
+  font-size: 0.85rem;
+  color: #4a4a4a;
+  font-weight: 600;
+  text-align: center;
+  margin: 1rem 0;
+}
+.app-pop p {
+  margin: 1rem 1.5rem;
+  line-height: 1.8;
+}
+.app-pop .button {
+  border-top: 1px solid #EAEAEA;
+}
