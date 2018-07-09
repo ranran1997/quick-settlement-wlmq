@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>快处快赔</title>
+  <link rel="stylesheet" href="scss/index.css">
+</head>
+
+<body>
+  <div class="app-page">
+    <header class="app-header">
+      <div class="app-flex horizontal middle center">
+        <a class="app-back" href="#" onclick="window.history.go(-1)"></a>
+        <h1 class="app-title">理赔信息</h1>
+        <a href="" class="app-menu"></a>
+      </div>
+    </header>
+    <div class="app-banner-fix">
+      <img src="img/police.png" alt="" style="width:5rem;">
+      <div class="ib fs-15 c-f v-m t-l ml-20 lh-16">亲，保险报案已成功，保险公司<br>将尽快与您联系。</div>
+    </div>
+    <section class="app-view">
+      <div class="wrapper auto">
+        <div class="wrapper-info">
+          <h2 class="fs-15 c-3">甲方保险信息</h2>
+          <dl class="app-flex horizonotal middle between fs-15 c-6 lh-20">
+            <dt>驾驶员姓名</dt>
+            <dd>赵晓萌</dd>
+          </dl>
+          <dl class="app-flex horizonotal middle between fs-15 c-6 lh-20">
+            <dt>保险公司</dt>
+            <dd>中国平安</dd>
+          </dl>
+          <dl class="app-flex horizonotal middle between fs-15 c-6 lh-20">
+            <dt>保险公司电话</dt>
+            <dd>95505</dd>
+          </dl>
+          <dl class="app-flex horizonotal middle between fs-15 c-6 lh-20">
+            <dt>保险报案号</dt>
+            <dd>2346464561341645</dd>
+          </dl>
+          <dl class="app-flex horizonotal middle between fs-15 c-6 lh-20">
+            <dt>保险报案时间</dt>
+            <dd>2018-05-29 16:36</dd>
+          </dl>
+        </div>
+        <div class="wrapper-info">
+          <h2 class="fs-15 c-3">理赔进度</h2>
+          <ul class="grid grid-5 flow">
+            <li class="grid-item done"><span>报案</span><i class="dot"></i></li>
+            <li class="grid-item done"><span>审核</span><i class="dot"></i></li>
+            <li class="grid-item on"><span>立案</span><i class="dot"></i></li>
+            <li class="grid-item"><span>定损</span><i class="dot"></i></li>
+            <li class="grid-item"><span>理赔</span><i class="dot"></i></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <footer class="app-footer">
+      <a href="信息采集-驾驶证.html" class="button success rounder">
+        <img src="img/tel.png" alt="" style="height:1.4rem;">
+        <span class="v-m ml-10">95505 拨号</span>
+      </a>
+    </footer>
+  </div>
+  <!-- 弹出框 -->
+  <div class="app-mask" style="display:none;"></div>
+  <div class="app-pop" style="display:none;">
+    <h2 class="app-pop-title">温馨提示</h2>
+    <p>请打开手机GPS定位功能，确保警方定位事故现场。</p>
+    <a href="#" class="button primary light">设置</a>
+  </div>
+</body>
+
+</html>

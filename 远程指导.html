@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="scss/index.css">
+</head>
+
+<body>
+  <div class="app-page">
+    <header class="app-header">
+      <div class="app-flex horizontal middle center">
+        <a class="app-back" href="#" onclick="window.history.go(-1)"></a>
+        <h1 class="app-title">远程指导</h1>
+        <a href="" class="app-menu"></a>
+      </div>
+    </header>
+    <section class="app-view" style="background:none;">
+      <div class="app-flex vertical center middle" style="height:100%;padding:0 1rem;">
+        <img style="width:90%;" class="full" src="img/step7.png" alt="">
+      </div>
+    </section>
+  </div>
+  <!-- 弹出框 -->
+  <div class="app-mask" style="display:none;"></div>
+  <div class="app-pop" style="display:none;">
+    <h2 class="app-pop-title">温馨提示</h2>
+    <p>请打开手机GPS定位功能，确保警方定位事故现场。</p>
+    <a href="#" class="button primary light">设置</a>
+  </div>
+</body>
+
+</html>

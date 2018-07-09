@@ -1,0 +1,44 @@
+.collapse{
+  display:flex;
+  flex-direction: column;
+  background:#fff;
+  border-radius:0.5rem;
+  margin-bottom:0.5rem;
+  border-radius:0.5rem;
+  overflow:hidden;
+  .collapse-head{
+    background:#00A7FF;
+    border-radius:0.5rem 0.5rem 0 0;
+    padding:0.3rem 0.5rem;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    .collapse-title{
+      font-size:0.9rem;
+      color:#fff;
+      font-weight:100;
+    }
+    .collapse-marker{
+      display:inline-block;
+      width:2rem;
+      height:2rem;
+      background:url(../img/collapse.png) no-repeat center center;
+      background-size:1rem;
+      transition:0.3s;
+    }
+  }
+  .collapse-content{
+    padding:0.5rem;
+  }
+  &[open]{
+    .collapse-head{
+      .collapse-marker{
+        transform:rotate(-180deg);
+      }
+    }
+  }
+  &:last-child{
+    margin-bottom:0;
+  }
+}

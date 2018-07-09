@@ -1,0 +1,56 @@
+.collapse {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: #fff;
+  border-radius: 0.5rem;
+  margin-bottom: 0.5rem;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+.collapse .collapse-head {
+  background: #00A7FF;
+  border-radius: 0.5rem 0.5rem 0 0;
+  padding: 0.3rem 0.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.collapse .collapse-head .collapse-title {
+  font-size: 0.9rem;
+  color: #fff;
+  font-weight: 100;
+}
+.collapse .collapse-head .collapse-marker {
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+  background: url(../img/collapse.png) no-repeat center center;
+  background-size: 1rem;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.collapse .collapse-content {
+  padding: 0.5rem;
+}
+.collapse[open] .collapse-head .collapse-marker {
+  -webkit-transform: rotate(-180deg);
+          transform: rotate(-180deg);
+}
+.collapse:last-child {
+  margin-bottom: 0;
+}

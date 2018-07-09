@@ -1,0 +1,45 @@
+.button {
+  display: inline-block;
+  text-align: center;
+  padding: 0.7rem 1.5rem;
+  width: 100%;
+  text-align: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-decoration: none;
+  color: #fff;
+  font-size: 0.85rem;
+  font-weight: 200;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.button span {
+  display: block;
+  font-size: 0.6rem;
+}
+.button.rounder {
+  border-radius: 1.5rem;
+}
+.button.primary {
+  background: -webkit-gradient(linear, left top, right top, from(#57c9ff), to(#11adff));
+  background: linear-gradient(left, #57c9ff, #11adff);
+  -webkit-box-shadow: 0 2px 18px rgba(49, 186, 255, 0.3);
+          box-shadow: 0 2px 18px rgba(49, 186, 255, 0.3);
+}
+.button.danger {
+  background: -webkit-gradient(linear, left top, right top, from(#ff8149), to(#ff4d49));
+  background: linear-gradient(left, #ff8149, #ff4d49);
+  -webkit-box-shadow: 0 2px 18px rgba(255, 129, 73, 0.3);
+          box-shadow: 0 2px 18px rgba(255, 129, 73, 0.3);
+}
+.button.light {
+  background: #fff;
+  -webkit-box-shadow: 0 0 0 transparent;
+          box-shadow: 0 0 0 transparent;
+}
+.button.light.primary {
+  color: #00a7ff;
+}
+.button:active {
+  opacity: 0.8;
+}

@@ -1,0 +1,85 @@
+.radio {
+  font-size: inherit;
+  position: relative;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: inherit;
+  margin-left: 0.5rem;
+}
+.radio input {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+.radio input:checked + .radio-flag {
+  border-width: 3px;
+}
+.radio .radio-flag {
+  display: inline-block;
+  width: 0.9rem;
+  height: 0.9rem;
+  border-radius: 50%;
+  border: 1px solid #e7e7e7;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.radio .radio-label {
+  font-size: inherit;
+  color: inherit;
+  padding-left: 0.2rem;
+  font-weight: 200;
+}
+.radio.radio-button .radio-flag {
+  display: none;
+}
+.radio.radio-button .radio-label {
+  padding: 0.5rem 1.5rem;
+  border-radius: 0.5rem;
+}
+.radio.radio-button.primary .radio-label {
+  border: 1px solid #01A7FF;
+  color: #01A7FF;
+}
+.radio.radio-button.primary input:checked + .radio-flag + .radio-label {
+  background: -webkit-gradient(linear, left top, right top, from(#00A7FF), to(#00CEFF));
+  background: linear-gradient(left, #00A7FF, #00CEFF);
+  color: #fff;
+}
+.radio.radio-button.danger .radio-label {
+  border: 1px solid #FF4949;
+  color: #FF4949;
+}
+.radio.radio-button.danger input:checked + .radio-flag + .radio-label {
+  background: -webkit-gradient(linear, left top, right top, from(#ff4949), to(#ff7e4b));
+  background: linear-gradient(left, #ff4949, #ff7e4b);
+  color: #fff;
+}
+.radio.radio-button.success .radio-label {
+  border: 1px solid #0DC65B;
+  color: #0DC65B;
+}
+.radio.radio-button.success input:checked + .radio-flag + .radio-label {
+  background: -webkit-gradient(linear, left top, right top, from(#0DC65B), to(#0FC68E));
+  background: linear-gradient(left, #0DC65B, #0FC68E);
+  color: #fff;
+}
+.radio.primary input:checked + .radio-flag {
+  border-color: #00A7FF;
+}
+.radio.danger input:checked + .radio-flag {
+  border-color: #FF4B49;
+}
+.radio.success input:checked + .radio-flag {
+  border-color: #0DC65B;
+}
