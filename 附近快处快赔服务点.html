@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>快处快赔</title>
+  <link rel="stylesheet" href="scss/index.css">
+</head>
+
+<body>
+  <div class="app-page light">
+    <header class="app-header">
+      <div class="app-flex horizontal middle center">
+        <a class="app-back" href="#" onclick="window.history.go(-1)"></a>
+        <h1 class="app-title">附近快处快赔服务点</h1>
+        <a href="" class="app-menu"></a>
+      </div>
+    </header>
+    <section class="app-view">
+      <!-- 地图 -->
+      <img src="img/map.png" alt="" class="h">
+      <div class="wrapper-info fixed shadow" id="more">
+        <a href="#" class="fs-16 c-blue block more">点击查看更多结果</a>
+      </div>
+      <div class="wrapper-info fixed shadow" id="list">
+        <ul class="location rank">
+          <li class="app-flex horizonotal middle between">
+            <div class="t-l oneline fs-16 c-3">
+              友好南路56号友好南路56号友好南路56号友好南路56号<br>
+              <i class="fs-13 c-9">586m</i>
+            </div>
+            <a href="#" class="t-c">
+              <img src="img/tip.png" alt="" style="width:1.6rem;">
+              <span class="block fs-13 c-9">路线</span>
+            </a>
+          </li>
+          <li class="app-flex horizonotal middle between">
+            <div class="t-l oneline fs-16 c-3">
+              友好南路56号<br>
+              <i class="fs-13 c-9">586m</i>
+            </div>
+            <a href="#" class="t-c">
+              <img src="img/tip.png" alt="" style="width:1.6rem;">
+              <span class="block fs-13 c-9">路线</span>
+            </a>
+          </li>
+          <li class="app-flex horizonotal middle between">
+            <div class="t-l oneline fs-16 c-3">
+              友好南路56号<br>
+              <i class="fs-13 c-9">586m</i>
+            </div>
+            <a href="#" class="t-c">
+              <img src="img/tip.png" alt="" style="width:1.6rem;">
+              <span class="block fs-13 c-9">路线</span>
+            </a>
+          </li>
+          <li class="app-flex horizonotal middle between">
+            <div class="t-l oneline fs-16 c-3">
+              友好南路56号<br>
+              <i class="fs-13 c-9">586m</i>
+            </div>
+            <a href="#" class="t-c">
+              <img src="img/tip.png" alt="" style="width:1.6rem;">
+              <span class="block fs-13 c-9">路线</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </div>
+  <script src="js/zepto.min.js"></script>
+  <script>
+    $('#more').click(function(){
+      $(this).hide()
+      $('#list').addClass('active')
+    })
+  </script>
+</body>
+
+</html>

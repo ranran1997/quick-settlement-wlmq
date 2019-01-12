@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="scss/index.css">
+</head>
+
+<body>
+  <div class="app-page">
+    <header class="app-header">
+      <div class="app-flex horizontal middle center">
+        <a class="app-back" href="#" onclick="window.history.go(-1)"></a>
+        <h1 class="app-title">安全提示</h1>
+        <a href="" class="app-menu"></a>
+      </div>
+    </header>
+    <div class="app-banner-fix">
+      <p class="badge" style="padding:0.5rem 2rem;border-radius:1rem;padding-left:4rem;"><img style="position:absolute;left:-1rem;top:50%;transform:translateY(-50%);" src="img/police.png" alt=""> <span>请将车辆移至不影<br/>响交通的安全地点</span></p>
+    </div>
+    <section class="app-view">
+      <div class="app-flex vertical center middle" style="height:100%;padding:0 1rem;">
+        <img class="full" src="img/step5.png" alt="">
+        <p class="tip light" style="margin-top:1rem;color:#333;">神速！第一环节，拍照已经完成啦，赶快将车辆移至不影响交通的安全地点吧！引起交通拥堵可能会受到行政处罚哦。</p>
+      </div>
+    </section>
+    <footer class="app-footer">
+      <a href="信息采集-驾驶证.html" class="button primary rounder">继续</a>
+    </footer>
+  </div>
+  <!-- 弹出框 -->
+  <div class="app-mask" style="display:none;"></div>
+  <div class="app-pop" style="display:none;">
+    <h2 class="app-pop-title">温馨提示</h2>
+    <p>请打开手机GPS定位功能，确保警方定位事故现场。</p>
+    <a href="#" class="button primary light">设置</a>
+  </div>
+</body>
+
+</html>

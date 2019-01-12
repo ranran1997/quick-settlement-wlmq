@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="scss/index.css">
+  <link rel="stylesheet" href="scss/swiper-4.3.3.min.css">
+</head>
+
+<body>
+  <div class="app-page">
+    <header class="app-header">
+      <div class="app-flex horizontal middle center">
+        <a class="app-back" href="#" onclick="window.history.go(-1)"></a>
+        <h1 class="app-title">选择事故车辆数量</h1>
+        <a href="" class="app-menu"></a>
+      </div>
+    </header>
+    <section class="app-view" style="background:none;">
+      <p class="app-tips warning">本系统不适用于非新疆承保车辆</p>
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="card full" style="height:24rem;">
+              <h2 class="title">双车事故</h2>
+              <img class="full" src="img/step4-1.png" alt="">
+              <a href="信息采集-拍照.html" style="margin-top:1.5rem;" class="button primary rounder">选择</a>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card full" style="height:24rem;">
+              <h2 class="title">单车事故</h2>
+              <p class="app-tips warning" style="font-size:0.7rem;color:#ff9900;">单车事故流程不适用于<br/>停放期间受损车辆</p>
+              <img class="full" src="img/step4-2.png" alt="">
+              <a href="#" class="button primary rounder">选择</a>
+            </div>
+          </div>
+        </div>
+        <!-- 如果需要分页器 -->
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+  </div>
+  <script src="js/swiper-4.3.3.min.js"></script>
+  <script>
+    var mySwiper = new Swiper('.swiper-container', {
+      direction: 'horizontal',
+      loop: false,
+        pagination: {
+        el: '.swiper-pagination',
+      }
+    })
+  </script>
+</body>
+
+</html>

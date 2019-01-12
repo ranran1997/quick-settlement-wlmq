@@ -1,0 +1,252 @@
+html{
+  font-size:calc(100vw/18.75);
+}
+html, body{
+  height:100%;
+  margin:0;
+}
+*{
+  box-sizing:border-box;
+}
+img{
+  vertical-align: top;
+}
+details summary::-webkit-details-marker {
+  display:none; 
+}
+summary{
+  user-select: none;
+  outline:0;
+}
+h1,h2,h3,h4,h5,h6,p,ul,dl{
+  margin:0;
+  padding:0;
+  font-weight:300;
+}
+.app-page{
+  height:100%;
+  display:flex;
+  flex-direction:column;
+  background:url(../img/bg.jpg) no-repeat center center;
+  background-size:100% 100%;
+  &.light{
+    .app-header{
+      background:#fff;
+      .app-back{
+        background:url(../img/back1.png) no-repeat center center;
+        background-size:1.2rem;
+      }
+      .app-title{
+        color:#333;
+      }
+    }
+  }
+  .app-tips{
+    font-size:0.85rem;
+    color:#fff;
+    text-align:center;
+    margin-bottom:1rem;
+    &.warning{
+      color:#ffd200;
+      font-size:0.7rem;
+    }
+  }
+  .app-header{
+    height:3.2rem;
+    .app-back{
+      background:url(../img/back.png) no-repeat center center;
+      display:inline-block;
+      width:3.2rem;
+      height:3.2rem;
+      background-size:1.2rem;
+    }
+    .app-title{
+      flex:1;
+      font-size:0.95rem;
+      color:#fff;
+      display:flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+    }
+    .app-menu{
+      display:flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      width:3.2rem;
+      height:3.2rem;
+      img{
+        width:1.2rem;
+      }
+    }
+  }
+  .app-view{
+    flex:1;
+    overflow:hidden;
+    background:linear-gradient(bottom, #dfe3ed,#f0f4fb);
+    .app-scroller{
+      height:100%;
+      overflow:auto;
+    }
+  }
+  .app-footer{
+    padding:0.5rem;
+    background:#dfe3ed;
+    position: relative;
+    &.div{
+      padding-top:0.75rem;
+      &:before{
+        content:'';
+        display:inline-block;
+        width:100%;
+        height:0.5rem;
+        background:url(../img/bolang.png) no-repeat center center;
+        background-size:100%;
+        position: absolute;
+        top:-0.25rem;
+        left:0;
+        width:100%;
+      }
+    }
+  }
+}
+.app-flex{
+  display:flex;
+  &.vertical{
+    flex-direction: column;
+    &.center{
+      align-items: center;
+    }
+    &.middle{
+      justify-content: center;
+    }
+  }
+  &.horizontal{
+    flex-direction: row;
+    &.center{
+      justify-content: center;
+    }
+    &.middle{
+      align-items: center;
+    }
+  }
+}
+.full{
+  width:100%;
+}
+.t-c{
+  text-align:center;
+}
+.panel{
+  background:rgba(255,255,255,0.6);
+  padding:1rem;
+  box-sizing:border-box;
+  &.conner{
+    border-radius:0.5rem;
+  }
+}
+.c-warning{
+  color:#ffcc00;
+}
+
+// @media screen and (max-width: 320px) {
+//   html{
+//     font-size:calc(100vw/16);
+//   }
+// }
+
+.fs-24{
+  font-size:1.2rem;
+}
+.c-primary{
+  color:#00a7ff;
+}
+
+.box{
+  border-radius:0.5rem;
+  color:#fff;
+  font-weight:200;
+  padding:1rem;
+  &.qz{
+    background:url(../img/qz.png) no-repeat center center;
+    background-size:100%;
+  }
+  &.wz{
+    background:url(../img/wz.png) no-repeat center center;
+    background-size:100%;
+  }
+  h2{
+    font-size:1.2rem;
+    font-weight:inherit;
+    justify-content: space-between;
+  }
+  p{
+    font-size:0.9rem;
+    font-weight:inherit;
+  }
+}
+
+.text{
+  font-size:0.8rem;
+  color:#4a4a4a;
+  padding:0.5rem 0;
+}
+
+.send-code{
+  display:flex;
+  display:-webkit-flex;
+  flex-direction:row;
+  align-items:center;
+  font-size:0.75rem;
+  color:#999;
+  input,button{
+    border:1px solid #E4E4E4;
+    padding:0.5rem;
+    font-size:inherit;
+    color:inherit;
+    border-radius:0.2rem;
+    outline:none;
+  }
+  input{
+    flex:1;
+    -webkit-flex:1;
+  }
+  button{
+    margin-left:0.5rem;
+    background:none;
+    padding:0.42rem;
+  }
+}
+
+.autograph{
+  font-size:0.75rem;
+  color:#999;
+  text-align:center;
+  border:1px solid #E7E7E7;
+  padding:2rem 1rem;
+  margin:0.5rem 0;
+  border-radius:0.2rem;
+}
+
+.doc{
+  h2{
+    font-size:0.9rem;
+    text-align:center;
+    margin:0;
+    border-bottom:1px solid #E4E4E4;
+    padding-bottom:0.5rem;
+    font-weight:600;
+  }
+  h3{
+    font-size:0.75rem;
+    font-weight:600;
+  }
+}
+
+.dashed{
+  display:inline-block;
+  border-top:1px dashed #E4E4E4;
+  height:1px;
+  width:100%;
+}

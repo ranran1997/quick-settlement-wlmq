@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="scss/index.css">
+</head>
+
+<body>
+  <div class="app-page light">
+    <header class="app-header">
+      <div class="app-flex horizontal middle center">
+        <a class="app-back" href="#" onclick="window.history.go(-1)"></a>
+        <h1 class="app-title">驾驶员及车辆信息</h1>
+        <a href="" class="app-menu">
+          <img src="img/qrcode.png" alt="">
+        </a>
+      </div>
+    </header>
+    <section class="app-view">
+      <div class="app-scroller" style="padding:0.5rem;">
+        <details class="collapse" open>
+          <summary class="collapse-head">
+            <h2 class="collapse-title">驾驶员信息</h2>
+            <p class="collapse-marker"></p>
+          </summary>
+          <section class="collapse-content">
+            <ul class="form">
+              <li class="form-item">
+                <div class="form-label" style="width:5em;">驾驶员姓名</div>
+                <div class="form-value">
+                  <input type="text" placeholder="请输入驾驶员姓名">
+                </div>
+              </li>
+              <li class="form-item">
+                <div class="form-label" style="width:5em;">身份证号</div>
+                <div class="form-value">
+                  <input type="text" placeholder="请输入身份证号">
+                </div>
+              </li>
+              <li class="form-item">
+                <div class="form-label" style="width:5em;">手机号</div>
+                <div class="form-value">
+                  <input type="text" placeholder="请输入手机号">
+                </div>
+              </li>
+              <li class="form-item">
+                <div class="form-label" style="width:5em;">手机验证码</div>
+                <div class="form-value">
+                  <input type="text" placeholder="请输入验证码">
+                </div>
+              </li>
+            </ul>
+          </section>
+        </details>
+        <details class="collapse" open>
+          <summary class="collapse-head">
+            <h2 class="collapse-title">车辆信息</h2>
+            <p class="collapse-marker"></p>
+          </summary>
+          <section class="collapse-content">
+            <ul class="form">
+              <li class="form-item">
+                <div class="form-label" style="width:5em;">车牌号码</div>
+                <div class="form-value">
+                  <input type="text" placeholder="请输入驾驶员姓名">
+                </div>
+              </li>
+              <li class="form-item">
+                <div class="form-label" style="width:5em;">车牌号码</div>
+                <div class="form-value">
+                  <input type="text" placeholder="请输入身份证号">
+                </div>
+              </li>
+              <li class="form-item">
+                <div class="form-label" style="width:5em;">车牌种类</div>
+                <div class="form-value">
+                  <div class="select">
+                    <select name="" id="">
+                      <option value="">请选择</option>
+                    </select>
+                  </div>
+                </div>
+              </li>
+              <li class="form-item">
+                <div class="form-label" style="width:5em;">保险公司</div>
+                <div class="form-value">
+                  <input type="text" placeholder="请输入验证码">
+                </div>
+              </li>
+              <li class="form-item">
+                <div class="form-label" style="width:5em;">保险期止</div>
+                <div class="form-value">
+                  <input type="text" placeholder="请输入验证码">
+                </div>
+              </li>
+              <li class="form-item">
+                <div class="form-label" style="width:6em;">交强险保单号</div>
+                <div class="form-value">
+                  <input type="text" placeholder="请输入验证码">
+                </div>
+              </li>
+            </ul>
+          </section>
+        </details>
+        <p class="tip">请确保输入框中的信息准确无误，<br/>如信息错误将会影响后续理赔。</p>
+      </div>
+    </section>
+    <footer class="app-footer">
+      <a href="选择事故车辆数量.html" class="button primary rounder">提交</a>
+    </footer>
+  </div>
+  <!-- 弹出框 -->
+  <div class="app-mask" style="display:none;"></div>
+  <div class="app-pop" style="display:none;">
+    <h2 class="app-pop-title">温馨提示</h2>
+    <p>请打开手机GPS定位功能，确保警方定位事故现场。</p>
+    <a href="#" class="button primary light">设置</a>
+  </div>
+</body>
+
+</html>

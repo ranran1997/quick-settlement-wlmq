@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="scss/index.css">
+</head>
+
+<body>
+  <div class="app-page light">
+    <header class="app-header">
+      <div class="app-flex horizontal middle center">
+        <a class="app-back" href="#" onclick="window.history.go(-1)"></a>
+        <h1 class="app-title">安全提示</h1>
+        <a href="" class="app-menu">
+          <img src="img/qrcode.png" alt="">
+        </a>
+      </div>
+    </header>
+    <section class="app-view">
+      <div class="app-scroller" style="padding:0.5rem;">
+        <details class="collapse" open>
+          <summary class="collapse-head" style="display:none;">
+          </summary>
+          <section class="collapse-content">
+            <a href="#" class="box-link app-flex vertical center middle">
+              <img src="img/add.png" alt="">
+              <span>选择事故情形</span>
+            </a>
+          </section>
+        </details>
+        <details class="collapse" open>
+          <summary class="collapse-head">
+            <h2 class="collapse-title">乙方定则</h2>
+            <p class="collapse-marker"></p>
+          </summary>
+          <section class="collapse-content">
+            <p class="fs-24 c-primary app-flex center horizontal">新A25636</p>
+            <div class="app-flex horizontal center" style="font-size:0.8rem;margin:1rem 0;">
+              <label for="n1" class="radio danger radio-button">
+                <input type="radio" checked name="n" id="n1">
+                <span class="radio-flag"></span>
+                <span class="radio-label">全责</span>
+              </label>
+              <label for="n2" class="radio primary radio-button">
+                <input type="radio" name="n" id="n2">
+                <span class="radio-flag"></span>
+                <span class="radio-label">同责</span>
+              </label>
+              <label for="n3" class="radio success radio-button">
+                <input type="radio" name="n" id="n3">
+                <span class="radio-flag"></span>
+                <span class="radio-label">无责</span>
+              </label>
+            </div>
+            <ul class="form small">
+              <li class="form-item">
+                <div class="form-label">驾驶员姓名</div>
+                <div class="form-value">赵晓萌</div>
+              </li>
+              <li class="form-item">
+                <div class="form-label">保险公司</div>
+                <div class="form-value">421656********5645</div>
+              </li>
+              <li class="form-item">
+                <div class="form-label">保单号</div>
+                <div class="form-value">136****3652</div>
+              </li>
+              <li class="form-item">
+                <div class="form-label">车损部位</div>
+                <div class="form-value">新A***36</div>
+              </li>
+              <li class="form-item">
+                <div class="form-label">手机号</div>
+                <div class="form-value">蓝牌</div>
+              </li>
+            </ul>
+          </section>
+        </details>
+        <details class="collapse" open>
+          <summary class="collapse-head">
+            <h2 class="collapse-title">对方定则</h2>
+            <p class="collapse-marker"></p>
+          </summary>
+          <section class="collapse-content">
+            <p class="fs-24 c-primary app-flex center horizontal">新A25636</p>
+            <div class="app-flex horizontal center" style="font-size:0.8rem;margin:1rem 0;">
+              <label for="n1" class="radio danger radio-button">
+                <input type="radio" checked name="n" id="n1">
+                <span class="radio-flag"></span>
+                <span class="radio-label">全责</span>
+              </label>
+              <label for="n2" class="radio primary radio-button">
+                <input type="radio" name="n" id="n2">
+                <span class="radio-flag"></span>
+                <span class="radio-label">同责</span>
+              </label>
+              <label for="n3" class="radio success radio-button">
+                <input type="radio" name="n" id="n3">
+                <span class="radio-flag"></span>
+                <span class="radio-label">无责</span>
+              </label>
+            </div>
+            <ul class="form">
+              <li class="form-item">
+                <div class="form-label">驾驶员姓名</div>
+                <div class="form-value">赵晓萌</div>
+              </li>
+              <li class="form-item">
+                <div class="form-label">保险公司</div>
+                <div class="form-value">421656********5645</div>
+              </li>
+              <li class="form-item">
+                <div class="form-label">保单号</div>
+                <div class="form-value">136****3652</div>
+              </li>
+              <li class="form-item">
+                <div class="form-label">车损部位</div>
+                <div class="form-value">新A***36</div>
+              </li>
+              <li class="form-item">
+                <div class="form-label">手机号</div>
+                <div class="form-value">蓝牌</div>
+              </li>
+            </ul>
+          </section>
+        </details>
+      </div>
+    </section>
+    <footer class="app-footer">
+      <a style="padding:0.2rem 0;" href="选择事故车辆数量.html" class="button primary rounder">对事故责任认定无争议<span>两位交通法规学的真好！给您点赞！</span></a>
+      <a style="padding:0.2rem 0;margin-top:0.5rem;" href="选择事故车辆数量.html" class="button danger rounder">对事故责任认定有争议<span>看来事故有点复杂，提交警方远程指导吧！</span></a>
+    </footer>
+  </div>
+  <!-- 弹出框 -->
+  <div class="app-mask" style="display:none;"></div>
+  <div class="app-pop" style="display:none;">
+    <h2 class="app-pop-title">温馨提示</h2>
+    <p>完善您的个人信息后方可进行“快处快赔”,是否立即完善信息？</p>
+    <div class="app-flex horizontal center middle">
+      <a href="#" class="button primary light" style="border-right:1px solid #E9E9E9;color:#4a4a4a;">取消</a>
+      <a href="#" class="button primary light">快速完善</a>
+    </div>
+  </div>
+</body>
+
+</html>
